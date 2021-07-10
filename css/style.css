@@ -683,3 +683,41 @@ body {
     width: 100%;
     z-index: 4;
 }
+.tours{
+    margin-bottom: 107px;
+}
+.tours__tour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+.tour__info{
+    padding-left: 52px;
+}
+.tour__title{
+    margin-bottom: 85px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #102746;
+}
+.tour__desc{
+    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+}
+.tour__more{
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../img/arrow-right.svg) no-repeat right center;
+    padding-right: 59px; 
+    transition: .2s all;
+}
+.tour__more:hover, .tour__more:focus{
+    opacity: .65;
+}
