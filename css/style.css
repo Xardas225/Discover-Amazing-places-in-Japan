@@ -402,7 +402,10 @@ html {
     max-width: 1060px;
     margin: 0 auto;
 }
-
+.wrapper-full{
+    max-width: 1262px;
+    margin: 0 auto;
+}
 .header {
     position: fixed;
     top: 0;
@@ -579,3 +582,104 @@ body {
     background: url(../img/arrow-right.svg) no-repeat right center ;
 }
 
+.places__caption{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+}
+
+.places__title{
+
+}  
+.places__view-all{
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../img/arrow-right.svg) no-repeat 95% center;
+    padding-right: 59px;
+    transition: .2s all;
+}
+.places__view-all:hover , .places__view-all:focus{
+    opacity: .75;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.places{
+    margin-bottom: 131px;
+}
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card__size__lg{
+    grid-column: span 3;
+    height: 354px;
+    object-fit: cover;
+}
+.places__card{
+    position: relative;
+    overflow: hidden;
+}
+.places__card:hover .places__card-pic{
+    transform: scale(1.07);
+} 
+.places__card::after{
+    display: block;
+    width: 100%;
+    content: '';
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.places__card-title{
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+.places__card-pic{
+    width: 100%;
+    transition: .2s all;
+}
+.places__card__size__sm{
+    grid-column: span 2;
+    height: 283px;
+    object-fit: cover;
+}
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
